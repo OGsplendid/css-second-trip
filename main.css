@@ -1,0 +1,255 @@
+.container1 {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  padding: 20px;
+}
+
+.main-block {
+  padding: 20px;
+}
+
+.button1 {
+  width: 80px;
+  height: 38px;
+  background: #035efc;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10%;
+  cursor: pointer;
+}
+
+.button1:hover {
+  outline: 3px solid lightblue;
+}
+
+.text {
+  border: 1px solid gray;
+  padding: 15px;
+}
+
+.wrapper1 {
+  margin-top: 10px;
+  overflow: hidden;
+  max-height: 0px;
+  transition: max-height 1s;
+}
+
+.wrapper-second-state {
+  max-height: 500px;
+  transition: max-height 1s;
+}
+
+.container2 {
+  position: relative;
+  width: 310px;
+  min-height: 360px;
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+}
+
+.popup {
+  position: absolute;
+  width: 300px;
+  height: 350px;
+  border: 1px solid black;
+  background-color: coral;
+}
+
+.button-container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+}
+
+.button2 {
+  width: 70%;
+  height: 70%;
+  transition: width .5s, height .5s;
+  border: none;
+  border-radius: 100%;
+  background-color: red;
+}
+
+.button2:hover {
+  width: 90%;
+  height: 90%;
+  transition: width .5s, height .5s;
+}
+
+.button-disappear {
+  animation-name: button-disappear;
+  animation-duration: .5s;
+}
+
+.button-appear {
+  animation-name: button-appear;
+  animation-duration: .5s;
+}
+
+.popup-disappear {
+  animation-name: popup-disappear;
+  animation-duration: .6s;
+}
+
+.popup-appear {
+  animation-name: popup-appear;
+  animation-duration: .6s;
+}
+
+@keyframes button-disappear {
+  from {
+    width: 90%;
+    height: 90%;
+    opacity: 1;
+  }
+  to {
+    width: 70%;
+    height: 70%;
+    opacity: 0;
+  }
+}
+
+@keyframes button-appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes popup-disappear {
+  from {
+    width: 300px;
+    height: 350px;
+    opacity: 1;
+  }
+  to {
+    width: 200px;
+    height: 250px;
+    opacity: 0;
+  }
+}
+
+@keyframes popup-appear {
+  from {
+    width: 200px;
+    height: 250px;
+    opacity: 0;
+  }
+  to {
+    width: 300px;
+    height: 350px;
+    opacity: 1;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.container3 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 300px;
+  height: 270px;
+  padding: 20px;
+}
+
+.button3 {
+  width: 100px;
+  height: 40px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.heart {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-image: url("https://www.freepngimg.com/thumb/heart/18-heart-png-image-download.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: -1;
+}
+
+.first-motion {
+  animation-name: first-motion;
+  animation-duration: 1s;
+}
+
+.second-motion {
+  animation-name: second-motion;
+  animation-duration: 1s;
+}
+
+@keyframes first-motion {
+  from {
+    bottom: 40px;
+    left: 110px;
+    opacity: 1;
+  }
+  33% {
+    bottom: 90px;
+    left: 123px;
+    opacity: .8px;
+  }
+  50% {
+    bottom: 140px;
+    left: 145px;
+    opacity: .5;
+  }
+  67% {
+    bottom: 190px;
+    left: 167px;
+    opacity: .3px;
+  }
+  to {
+    bottom: 250px;
+    left: 180px;
+    opacity: 0;
+  }
+}
+
+@keyframes second-motion {
+  from {
+    bottom: 40px;
+    left: 180px;
+    opacity: 1;
+  }
+  33% {
+    bottom: 90px;
+    left: 167px;
+    opacity: .8px;
+  }
+  50% {
+    bottom: 140px;
+    left: 145px;
+    opacity: .5;
+  }
+  67% {
+    bottom: 190px;
+    left: 123px;
+    opacity: .3px;
+  }
+  to {
+    bottom: 250px;
+    left: 110px;
+    opacity: 0;
+  }
+}
+
+/*# sourceMappingURL=main.css.map*/

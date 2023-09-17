@@ -1,0 +1,97 @@
+.container3 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 300px;
+  height: 270px;
+  padding: 20px;
+}
+
+.button3 {
+  width: 100px;
+  height: 40px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.heart {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-image: url("https://www.freepngimg.com/thumb/heart/18-heart-png-image-download.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: -1;
+}
+
+.first-motion {
+  animation-name: first-motion;
+  animation-duration: 1s;
+}
+
+.second-motion {
+  animation-name: second-motion;
+  animation-duration: 1s;
+}
+
+@keyframes first-motion {
+  from {
+    bottom: 40px;
+    left: 110px;
+    opacity: 1;
+  }
+  33% {
+    bottom: 90px;
+    left: 123px;
+    opacity: .8px;
+  }
+  50% {
+    bottom: 140px;
+    left: 145px;
+    opacity: .5;
+  }
+  67% {
+    bottom: 190px;
+    left: 167px;
+    opacity: .3px;
+  }
+  to {
+    bottom: 250px;
+    left: 180px;
+    opacity: 0;
+  }
+}
+
+@keyframes second-motion {
+  from {
+    bottom: 40px;
+    left: 180px;
+    opacity: 1;
+  }
+  33% {
+    bottom: 90px;
+    left: 167px;
+    opacity: .8px;
+  }
+  50% {
+    bottom: 140px;
+    left: 145px;
+    opacity: .5;
+  }
+  67% {
+    bottom: 190px;
+    left: 123px;
+    opacity: .3px;
+  }
+  to {
+    bottom: 250px;
+    left: 110px;
+    opacity: 0;
+  }
+}

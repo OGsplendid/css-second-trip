@@ -8,16 +8,16 @@ export default class CallbackChat {
   static get html() {
     return `
     <div class="container2">
-  <div class="popup hidden"></div>
-  <div class="button-container">
-    <button class="button2"></button>
-  </div>
-</div>
+      <div class="popup hidden"></div>
+      <div class="button-container">
+        <button class="button2"></button>
+      </div>
+    </div>
     `;
   }
 
   bindToDOM() {
-    this.parentEl.innerHTML += CallbackChat.html;
+    this.parentEl.insertAdjacentHTML('beforeend', CallbackChat.html);
 
     this.container = document.querySelector('.container2');
     this.button = document.querySelector('.button2');

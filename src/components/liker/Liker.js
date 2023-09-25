@@ -11,7 +11,7 @@ export default class Liker {
     <button class="button3">Like</button>
   </div>
     `;
-    this.parentElement.innerHTML += html;
+    this.parentElement.insertAdjacentHTML('beforeend', html);
 
     this.container = this.parentElement.querySelector('.container3');
     this.button = this.container.querySelector('.button3');
